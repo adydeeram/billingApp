@@ -51,26 +51,31 @@ function cartBtn(e){
     
     // total amount display 
     
-        anArray.push(multiply)
+        // anArray.push(multiply)
 
 
     
     // Making sure that only numbers will be inserted to array 
+//  isNaN(multiply) ? console.log("hello") : console.log('bYE');
 
+    // let numbersOnly = (val) =>{
+    //     if(typeof(val) === 'number'){
+    //         return val
+    //     }
+    // }
+    // let numbers = anArray.filter(numbersOnly);
+    // console.log(numbers);
+    
+     if(!isNaN(multiply)){
+       anArray.push(multiply)
+     }
 
-    let numbersOnly = (val) =>{
-        if(typeof(val) === 'number'){
-            return val
-        }
-    }
-    let numbers = anArray.filter(numbersOnly);
-    console.log(numbers);
-
+     console.log(anArray);
 
 
     // adding to tatal value
 
-     const total = numbers.reduce((acc, cur) =>{
+     const total = anArray.reduce((acc, cur) =>{
              return cur + acc;
          }, 0)    
  

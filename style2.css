@@ -3,3 +3,25 @@ input::-webkit-outer-spin-button,
     -webkit-appearance: none;
     margin: 0;
   }
+
+
+  .main-id{
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 625px) {
+
+
+    .main-id{
+      flex-direction: column;
+      width: 70%;
+      justify-items: center;
+      padding-bottom: 7rem;
+
+    }
+    #displayArea{
+      margin-top: 2rem;
+    }
+    
+  }
